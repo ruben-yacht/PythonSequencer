@@ -11,9 +11,9 @@ if __name__ == "__main__":
     sf1 = SoundFile("../sound/drums/1-kick/kick-allaboutyou-1.wav")
 
     # sequencer takes a SoundFile as an argument; a list with the sequence; and the tempo in beats per minute (default 120)
-    sq1 = Sequencer(sf1,[x,o,o,o,x,o,o,o],9.4)
+    sq1 = Sequencer(sf1,[x,o,o,o,], 120)
 
     # number of times to play. 0 = infinite
-    sq1.play(10)
+    sq1.play(5)
 
     # have fun!
