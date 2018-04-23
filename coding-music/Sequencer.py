@@ -69,6 +69,6 @@ class Sequencer:
             self._sequence_index = 0
             self._repetitions_played += 1
             if(self._repetitions_played == self._repetitions and self._repetitions != 0):
-                print(self._sound.path, "ended")
+                print(self._sound.path, "sequence ended")
                 self.stop()
                 self._sound.wait_done()
